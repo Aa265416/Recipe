@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row my-2">
+        <div class="col-md-12 py-2 border border-dark rounded" >
+        <div class="">{{element.name}}</div>
+        <div class="">
+            <p>
+                <strong *ngIf="element.type == 'server'" style="color: red">{{element.content}}</strong>
+                <em *ngIf="element.type == 'blueprint'">{{element.content}}</em>
+            </p>
+        </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<a style="cursor: pointer;" class="list-group-item clearfix" [routerLink]="[index]" 
+routerLinkActive="active" >
+    <div class="d-flex justify-content-between">
+        <div class="pull-left">
+            <h4 class="list-group-item-heading m-0">{{ recipe.name }}</h4>
+            <p class="list-group-item-text m-0">{{ recipe.description }}</p>
+        </div>
+        <div class="pull-right">
+            <img [src]= "recipe.imagePath " class="img-fluid" alt="{{ recipe.name }}" style="max-height:50px">
+        </div>
+    </div>
+ 
+</a>
